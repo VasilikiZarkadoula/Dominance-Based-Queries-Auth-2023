@@ -18,6 +18,9 @@ import scala.reflect.io.Directory
 import scala.util.parsing.json.JSON
 
 object Skyline {
+
+  // ************************************ Grid Partitioning ********************************************
+  
   def findCell(divisionNum: Int, dimensions: Int, min: RDD[List[Double]], max: RDD[List[Double]]): ListBuffer[ListBuffer[Double]] = {
     val startTimeBound = System.nanoTime()
     var boundaries = ListBuffer[ListBuffer[Double]]()
@@ -66,6 +69,8 @@ object Skyline {
       .values.flatMap(_.flatten)
       .filter(point => !finalBounds.toList.contains(point)).iterator
   }
+
+  // ************************************ SFS Skyline ********************************************
 
   def transformList(D: List[List[Double]]): List[List[Double]] = {
     //Add score on each tuple of D. Score is the monotonic function ln(x+1)
