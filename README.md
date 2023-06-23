@@ -15,3 +15,5 @@ dominance score of a point p is defined as the total number of points dominated 
 
 Task3. Given a set of d-dimensional points, return the k points from the skyline with the highest dominance
 score
+<br /> <br />
+Aristotle Univeristy of Thessaloniki (AUTh) <br /> Technologies for Big data Analytics Course <br /> Contributors: Kyriaki Potamopoulou, Vasiliki Zarkadoula
